@@ -1,5 +1,5 @@
 function netValueBetter(person) {
-  if (person?.value === null || person?.contractingRegime === null) return console.log("Algo de errado não está certo")
+  if (person?.value === null && person?.contractingRegime === null) return console.log("Algo de errado não está certo")
 
   let result
   if (person.contractingRegime === 'PJ') {

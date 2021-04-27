@@ -1,6 +1,6 @@
 
 function netValue(person) {
-  if(person?.value !== null || person?.contractingRegime !== null) {
+  if(person?.value !== null && person?.contractingRegime !== null) {
     if (person.contractingRegime === 'PJ') {
       console.log("PJ")
       console.log("6%", percentageDecrease(person.value, 6))
@@ -28,8 +28,8 @@ function percentageDecrease(value, percentage) {
 }
 
 const person = {
-  value: 5000,
-  contractingRegime: 'PJ',
+  value: 500,
+  contractingRegime: 'CLT',
 }
 
 netValue(person)
